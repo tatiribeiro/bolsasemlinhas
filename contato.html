@@ -1,0 +1,83 @@
+<!-- VERSÃO DO HTML 5 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CODIFICAÇÃO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- CONEXÃO DO HTML COM O ARQUIVO CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- TÍTULO DA PÁGINA WEB -->
+    <title>Contato</title>
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header class="cabecalho">
+
+         <!-- BANNER PROMOCIONAL -->
+        <img src="img/agulha.jpg" id="banner"> 
+     
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav id="menu">
+                <a href="historia.html" target= "_blank" id="btn-muda-cor">História</a>
+                <!-- target SE REFERE A ABRIR UMA NOVA PÁGINA E NÃOONDE ESTÁ O SITE -->
+                <a href="moda.html" target="_blank" id="btn-muda-cor">Tá na moda</a>
+                <!-- a REFERE-SE AO BOTÃO PARA ACESSO QUE FOI INSERIDO AO SITE -->
+                <!-- _blank REFERE-SE A ABRIR UMA PÁGINA NOVA -->
+                <a href="contato.html" target="_blank" id="btn-muda-cor">Contato</a>      
+                  
+            </nav>
+      
+               
+    </header>
+
+    <!--PRINCIPAL-->
+    <main class="principal">
+                
+            <form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+             <input type="hidden" name="recipient" value="mandeparatati@gmail.com"> 
+             <!-- Pode ser qualquer endereço de email -->
+             <input type="hidden" name="redirect" value="http://facebook.com"> 
+             <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+             <input type="hidden" name="subject" value="teste de assunto">  
+             <!-- Assunto da mensagem -->
+             <input type="hidden" name="email" value="mandeparatati@gmail.com">   
+             <!-- Deve ser uma conta de email ativa em seu domínio -->
+             
+             <p> 
+             Nome:<br /> 
+             <input type="text" size="30" name="nome"> 
+             </p>   
+             
+             <p>
+             E-mail:<br /> 
+             <input type="text" size="30" name="replyto"> 
+             </p>   
+             
+             <p> 
+             Comentários:<br /> 
+            
+             <textarea rows="10" cols="40" maxlength="500" name="comentários"></textarea>
+           
+             </p>   
+             
+             <p> 
+             <input type="submit" name="BTEnvia" value="Enviar"> 
+             <input type="reset" name="BTApaga" value="Apagar"> </p> 
+             </form>
+             
+         
+    </main>
+
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div>
+            <p>By Tati Ribeiro</p>
+        </div>
+        <div>
+           <p>Todos os direitos reservados</p>
+        </div>
+     
+    </footer>
+</body>
+</html>
