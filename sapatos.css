@@ -21,7 +21,21 @@ body {
     /* BORDA DO LOGOTIPO (TAMANHO ESTILO COR) */
     border: 8px double rgb(102, 2, 105);
 }
-
+.titulo a {
+    background-image: url("img/agulha.jpg");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: 100% 100%;
+    font-size: 8em;
+    font-family: cursive;
+    text-decoration: none;
+    color: rgb(105, 7, 109);
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(235, 232, 99); /* cor da borda */
+      
+}
 #banner{
     margin-left: auto;
     margin-right: auto;
@@ -111,6 +125,18 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
+
+img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    object-fit: cover;
+    height: 400px;
+    width: 350px;
+    gap: 10px;
+}
+
+
 .rodape {
     /* COR DE FUNDO */
     background-color: rgb(102, 2, 105);
@@ -131,7 +157,9 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 489px);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat (2, 489px);
-    grid-gap: 16px;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
 }

@@ -9,10 +9,8 @@ html * {
 body {
     /* COR DE FUNDO */
     background-color: #f0b0dd;
-
 }
 
- 
 #logotipo {
     /* LARGURA DO LOGOTIPO */
     width: 200px;
@@ -22,11 +20,22 @@ body {
     border: 8px double rgb(102, 2, 105);
 }
 
-#banner{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.titulo a {
+    background-image: url("img/agulha.jpg");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: 100% 100%;
+    font-size: 8em;
+    font-family: cursive;
+    text-decoration: none;
+    color: rgb(105, 7, 109);
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(235, 232, 99); /* cor da borda */
+      
 }
+
 #menu {
     /* COR DE FUNDO */
     background-color: rgb(102, 2, 105);
@@ -50,7 +59,6 @@ body {
 #btn-muda-cor:hover{
     color: #d86bb7;
     font-size: x-large;
-
 }
 
 #menu a{
@@ -74,41 +82,17 @@ body {
     grid-template-columns: repeat(3, 1fr);
     /* ESPAÇAMENTO ENTRE COLUNAS E LINHAS DO GRID */
     gap: 100px;
-
     /* MARGEM DOS CARDS */
     margin: 20px 60px;
 }
 
-/* CAIXA DO CARD COM IMAGEM E H2 */
-.item {
-    /* COR DE FUNDO */
-    background-color: #e6a2d1;
-    /* ALINHAR NO CENTRO */
-    text-align: center; 
-    /* LETRAS MAIÚSCULAS */
-    text-transform: uppercase;
-    /* FONTE */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-   color: rgb(102, 2, 105);
-    /* BORDA SUPERIOR */
-    border: 5px solid rgb(102, 2, 105);
-    /* CONTORNO PARA BORDA */
-    border-radius: 1%;
-}
-
-.itemlogo {
+img{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* ESPAÇAMENTO ENTRE COLUNAS E LINHAS DO GRID */
-    gap: 5px;
-    /* ALINHAR OS ELEMENTOS NO CENTRO */
-    text-align: center;
-    /* COR DE FUNDO */
-    background-color: #e6a2d1;
-    /* LETRAS MAIÚSCULAS */
-    text-transform: uppercase;
-    /* FONTE */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    object-fit: cover;
+    height: 600px;
+    width: 500px;
 }
 
 .rodape {
@@ -136,3 +120,6 @@ body {
     grid-template-rows: repeat (2, 489px);
     grid-gap: 16px;
 }
+
+
+

@@ -21,12 +21,31 @@ body {
     /* BORDA DO LOGOTIPO (TAMANHO ESTILO COR) */
     border: 8px double rgb(102, 2, 105);
 }
-
-#banner{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.titulo a {
+    background-image: url("img/agulha.jpg");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: 100% 100%;
+    font-size: 8em;
+    font-family: cursive;
+    text-decoration: none;
+    color: rgb(105, 7, 109);
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(235, 232, 99); /* cor da borda */
+      
 }
+
+img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    object-fit: cover;
+    height: 600px;
+    width: 500px;
+}
+
 #menu {
     /* COR DE FUNDO */
     background-color: rgb(102, 2, 105);

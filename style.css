@@ -9,9 +9,7 @@ html * {
 body {
     /* COR DE FUNDO */
     background-color: #f0b0dd;
-
 }
-
  
 #logotipo {
     /* LARGURA DO LOGOTIPO */
@@ -19,14 +17,25 @@ body {
     /* MARGEM DO LOGOTIPO */
     margin: 20px 50px 20px 50px;
     /* BORDA DO LOGOTIPO (TAMANHO ESTILO COR) */
-    border: 8px double rgb(102, 2, 105);
+    border: 8px double rgb(60, 26, 61);
 }
 
-#banner{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.titulo a {
+    background-image: url("img/agulha.jpg");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: 100% 100%;
+    font-size: 8em;
+    font-family: cursive;
+    text-decoration: none;
+    color: rgb(105, 7, 109);
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(235, 232, 99); /* cor da borda */
+      
 }
+
 #menu {
     /* COR DE FUNDO */
     background-color: rgb(102, 2, 105);
@@ -50,7 +59,6 @@ body {
 #btn-muda-cor:hover{
     color: #d86bb7;
     font-size: x-large;
-
 }
 
 #menu a{
@@ -89,11 +97,20 @@ body {
     text-transform: uppercase;
     /* FONTE */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-   color: rgb(102, 2, 105);
+    font-size: 200%;
+    color: rgb(102, 2, 105);
     /* BORDA SUPERIOR */
     border: 5px solid rgb(102, 2, 105);
     /* CONTORNO PARA BORDA */
-    border-radius: 1%;
+    border-radius: 1%;  
+    padding: 20px;
+}
+
+img{
+    object-fit: contain;
+    height: 400px;
+    width: 350px;
+  
 }
 
 .itemlogo {
